@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio-ADS</title>
+
+    <style>
+        :root{
+            --color-white: #fff;
+            --color-dark1: #272727;
+            --color-dark2: #2d2d2d;
+            --color-dark3: #414141; 
+            --color-dark4: #1c1c1c;
+            --color-dark5: #343434;
+            --color-purple: #b040ff;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--color-white);
+            color: var(--color-white);
+        }
+
+        .img_logo{
+            width: 130px;
+        }
+
+        .header, .navigation{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .header{
+            background-color: #243746;
+            box-shadow: 1px 1px 4px var(--color-dark4);
+            height: 56px;
+            justify-content: space-between;
+            padding: 0 10%;
+        }
+
+        .navigation{
+            gap: 3em;
+        }
+
+
+        .navigation , a , .principaistop{
+            color: var(--color-white);
+            text-decoration: none;
+            transition: 1s;
+        }
+
+        .navigation a:hover{
+            color: #EB0045;
+        }
+
+        .btn_header{
+            background-color: transparent;
+            color: var(--color-white);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn_header:hover{
+            color:   #EB0045;
+            transition: 1s;
+        }
+
+        .linha{
+            margin: auto;
+            width: 90%;
+        }
+
+        .principaistop{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 3% 23%;
+            gap: 5em;
+            text-align: ;
+            justify-content: center;
+        }
+
+        .topico1{
+            border-radius: 20px;
+            background-color: #EB0045;
+            padding: 10px;
+        }
+
+        .topico2{
+            border-radius: 20px;
+            background-color: #EB0045;
+            padding: 10px;
+        }
+
+        .topico3{
+            border-radius: 20px;
+            background-color: #EB0045;
+            padding: 10px;
+        }
+
+        .topico4{
+            border-radius: 20px;
+            background-color: #EB0045;
+            padding: 10px;
+        }
+
+        .topico5{
+            border-radius: 20px;
+            background-color: #EB0045;
+            padding: 10px;
+        }
+
+        .banner{
+            width: 1340px;
+            height: 430px;
+            padding: 10px 0px;
+        }
+
+        footer{
+            background-color: #243746;
+        }
+
+        .texto1{
+            color: #243746;
+            padding: 3% 20%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .imgnovidade1 , .imgnovidade2 , .imgnovidade3{
+            
+            border-radius: 20px;
+            background-image: url(24_CARD_SITE_a0c3c94618.webp);
+            background-size: cover;
+            background-position: center;
+            margin-right: 30px; 
+        }
+
+        .imgnovidade3{
+            margin: 0;
+        }
+
+        .imgnovidade1 , .imgnovidade2 , .imgnovidade3{
+            width: 300px;
+            height: 300px;
+            justify-content: space-between;
+            
+        }
+            
+        .titulo{
+            color: #243746;
+            padding: 3% 3%;
+        }
+
+        .texto1{
+            color: #243746;
+            padding: 3% 20%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .imgnovidade1 , .imgnovidade2 , .imgnovidade3{
+            
+            border-radius: 20px;
+            background-image: url(24_CARD_SITE_a0c3c94618.webp);
+            background-size: cover;
+            background-position: center;
+            margin-right: 30px; 
+        }
+
+        .imgnovidade3{
+            margin: 0;
+        }
+
+        .imgnovidade1 , .imgnovidade2 , .imgnovidade3{
+            width: 300px;
+            height: 300px;
+            justify-content: space-between;
+            
+        }
+            
+        .titulo{
+            color: #243746;
+            padding: 3% 3%;
+        }
+
+        .texto1{
+            color: #243746;
+            padding: 3% 20%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .imgnovidade1 , .imgnovidade2 , .imgnovidade3{
+            
+            border-radius: 20px;
+            background-image: url(24_CARD_SITE_a0c3c94618.webp);
+            background-size: cover;
+            background-position: center;
+            margin-right: 30px; 
+        }
+
+        .imgnovidade3{
+            margin: 0;
+        }
+
+        .imgnovidade1 , .imgnovidade2 , .imgnovidade3{
+            width: 300px;
+            height: 300px;
+            justify-content: space-between;
+            
+        }
+            
+        .titulo{
+            color: #243746;
+            padding: 3% 3%;
+        }
+
+        footer{
+            margin-top: 90px;
+            text-align: center;
+            align-items: center;
+        }
+
+        .container{
+           width: 1200px;
+           height: 250px;
+           margin-top: 0 auto;
+            padding: 30px 0;
+        }
+
+        .logofooter{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+ <header>
+   <div class="header" id="header">
+    <div class="logo_header">
+            <img src="logo.webp" class="img_logo" alt="logo_biopark">
+    </div>
+    <div class="navigation">
+        <a href="*" >Home</a>
+        <a href="*" >Cursos</a>
+        <a href="*" >Sobre nos</a>
+        <a href="*">contatos</a>
+
+        <button class="btn_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+        </button>
+    </div>
+</header>
+   <main>
+        <div class="principaistop">
+            <div class="topico1">
+                <a href="*">novidades</a>
+            </div>
+            <div class="topico2">
+                <a href="*">noticias</a>
+            </div>
+            <div class="topico3">
+                <a href="*">professores</a>
+            </div>
+            <div class="topico4">
+                <a href="*">documento</a>
+            </div>
+            <div class="topico5">
+                <a href="*">projetos</a>
+            </div>
+        </div>
+
+        <div>
+            <img class="banner" src="1920_x_672_Banner_site_principal_desktop_2x_0f92ee7d3e.webp" alt="bannerbiopark">
+        </div>
+        <div class="titulo">
+            <h1>Novidades</h1>
+        </div>
+        <div class="texto1">
+           
+            <div class="imgnovidade1">
+               
+            </div>
+            <div class="imgnovidade2">
+                
+            </div>
+            <div class="imgnovidade3">
+                
+            </div>
+        </div>
+        <div class="titulo">
+            <h1>Noticias</h1>
+        </div>
+        <div class="texto1">
+           
+            <div class="imgnovidade1">
+               
+            </div>
+            <div class="imgnovidade2">
+                
+            </div>
+            <div class="imgnovidade3">
+                
+            </div>
+        </div>
+        <div class="titulo">
+            <h1>Professores</h1>
+        </div>
+        <div class="texto1">
+           
+            <div class="imgnovidade1">
+               
+            </div>
+            <div class="imgnovidade2">
+                
+            </div>
+            <div class="imgnovidade3">
+                
+            </div>
+    </main>   
+    <footer>
+        <div class="container">
+            <div class="logo2">
+                <img src="logo.webp" alt="logo" class="logofooter">
+            </div>
+            <p>este e o rodape da pagina</p>
+        </div>
+    </footer>
+</body>
+</html>
